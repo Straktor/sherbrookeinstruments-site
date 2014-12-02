@@ -324,8 +324,8 @@
 					</h4>
 					<!-- Description One -->
 					<p class="member-detail-one text-justify">
-						Cet oscilloscope contient une ligne analogique à deux canaux capable d'une fréquence maximale de 70Mhz ainsi qu'un ADC deux canaux haute vitesse de 500 millions d'échantillons par seconde. L'ensemble est contrôlé par un FPGA de Xilinx, un Spartan-6, capable de communiquer par un port Ethernet et UART vers le logiciel hôte de l'utilisateur. Il y a de plus une mémoire de 2Gbit DDR3 au côté du FPGA afin d'être en mesure d'enregistrer un certain nombres de données dans une mémoire tampon qui sera par la suite transféré vers l'ordinateur. <br/><br/>
-						Le circuit de déclenchement externe permet de synchroniser la capture de donnée entre plusieurs cartes d'oscilloscope ou encore pour synchroniser les deux canaux analogiques ensemble par rapport à un troisième signal.
+						Cet oscilloscope contient une ligne analogique à deux canaux capable d'une fréquence maximale de 70Mhz ainsi qu'un ADC deux canaux haute vitesse de 500 millions d'échantillons par seconde. L'ensemble est contrôlé par un FPGA de Xilinx, un Spartan-6, capable de communiquer par un port Ethernet et UART vers le logiciel hôte de l'utilisateur. De plus, il y a  une mémoire de 2Gbit DDR3 au côté du FPGA afin d'être en mesure d'enregistrer un certain nombre de données dans une mémoire tampon, ces données seront par la suite transférées vers l'ordinateur. <br/><br/>
+						Le circuit de déclenchement externe permet de synchroniser la capture de données entre plusieurs cartes d'oscilloscope ou encore pour synchroniser les deux canaux analogiques ensemble par rapport à un troisième signal.
 					</p>
 				</div>
 				<!-- Modal Right -->
@@ -420,9 +420,9 @@
 						</h4>
 						<!-- Description One -->
 						<p class="text-justify member-detail-one">
-							Ce système fonctionne avec une untié de contrôle centrale (STM32F107) qui recoit depuis l'ordinateur de l'utilisateur les valeurs de tension et la limite de courant voulues. La commande venant de l'ordinateur peut être envoyée par protocole Ethernet ou par protocole UART, deux protocoles de communication standards. L'unité de contrôle envoie ensuite ces commandes au Convertisseur Numérique Analogie (DAC) qui dictera aux alimentations à découpage la tension voulue. Les alimentations à découpage s'occupent ensuite de founir la puissance désirée en sortie.<br/><br/>
+							Ce système fonctionne avec une unité de contrôle central (STM32F107) qui reçoit, depuis l'ordinateur de l'utilisateur, les valeurs de tension et la limite de courant voulues. La commande venant de l'ordinateur peut être envoyée par protocole Ethernet ou par protocole UART, deux protocoles de communication standards. L'unité de contrôle envoie ensuite ces commandes au Convertisseur Numérique Analogie (DAC) qui dictera aux alimentations à découpage la tension voulue. Les alimentations à découpage s'occupent ensuite de founir la puissance désirée en sortie.<br/><br/>
 
-							Des moniteurs de tension et de courant sont placés à la sortie pour s'assurer du bon voltage et du respect de la limite de courant donnée par l'utilisateur sur l'ordinateur. Les valeurs enregistrées par les moniteurs sont ensuite traitée par un PID pour changer la consigne de tension en fonction de la limite de courant. Les valeurs sont également renvoyées vers l'ordinateur et affichées sur des graphiques en temps réel.
+							Des moniteurs de tension et de courant sont placés à la sortie pour s'assurer du bon voltage et du respect de la limite de courant donnée par l'utilisateur sur l'ordinateur. Les valeurs enregistrées par les moniteurs sont ensuite traitées par un PID pour changer la consigne de tension en fonction de la limite de courant. Les valeurs sont également renvoyées vers l'ordinateur et affichées sur des graphiques en temps réel.
 						</p>
 					</div>
 					<!-- Modal Right -->
@@ -517,7 +517,7 @@
 					</h4>
 					<!-- Description One -->
 					<p class="text-justify member-detail-one">
-						Ce système fonctionne avec un contrôleur qui recoit depuis l'ordinateur de l'utilisateur une valeur de courant ou de puissance à consommer. La commande venant de l'ordinateur peut être envoyée par protocole Ethernet ou par protocole UART, deux protocoles de communication standards. L'unité de contrôle envoie ensuite cette commande vers un étage d'amplification qui pilotera un transistor MOSFET de puissance qui agit à titre de résistance variable. L'étage d'amplification s'efforcera de garder la résistance série du MOSFET à la valeur requise pour faire passer le courant demandé par l'utilisateur et ce, peu importe la tension en entrée. Dans le cas d'une régulation en puissance, le MOSFET modulera sa résistance interne pour garder une puissance dissipée constante dictée par l'utilisateur. Un capteur de température est placé près du MOSFET pour s'assurer qu'il n'ateigne pas sa température maximale et cette valeur est ensuite envoyée vers l'ordinateur.<br/><br/>
+						Ce système fonctionne avec un contrôleur qui reçoit depuis l'ordinateur de l'utilisateur une valeur de courant ou de puissance à consommer. La commande venant de l'ordinateur peut être envoyée par protocole Ethernet ou par protocole UART, deux protocoles de communication standards. L'unité de contrôle envoie ensuite cette commande vers un étage d'amplification qui pilotera un transistor MOSFET de puissance qui agit à titre de résistance variable. L'étage d'amplification s'efforcera de garder la résistance série du MOSFET à la valeur requise pour faire passer le courant demandé par l'utilisateur et ce, peu importe la tension en entrée. Dans le cas d'une régulation en puissance, le MOSFET modulera sa résistance interne pour garder une puissance dissipée constante dictée par l'utilisateur. Un capteur de température est placé près du MOSFET pour s'assurer qu'il n'atteigne pas sa température maximale et cette valeur est ensuite envoyée vers l'ordinateur.<br/><br/>
 
 							Des moniteurs de tension et de courant sont placés à l'entrée du MOSFET pour valider le courant tiré ou la puissance consommée. Les valeurs sont également renvoyées vers l'ordinateur et affichées sur des graphiques en temps réel.
 					</p>
